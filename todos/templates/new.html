@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+  <form action="{% url 'todos:create' %}" method="POST" class="m-5">
+    {% csrf_token %}
+
+    <div class="form-group">
+      <label for="author">Author</label>
+      <input type="text" class="form-control" id="author" name="author">
+    </div>
+
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" id="title" name="title">
+    </div>
+
+    <div class="form-group">
+      <label for="duedate">Due Date</label>
+      <input type="date" class="form-control" id="duedate" name="due-date">
+    </div>
+
+    <div class="form-group">
+      <label for="content">Content</label>
+      <textarea class="form-control" id="content" rows="3" name="content"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    
+  </form>
+
+{% endblock %}

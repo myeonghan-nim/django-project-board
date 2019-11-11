@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+  <h1 class="m-5">Your Todos Index</h1>
+
+  <table class="table">
+
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Author</th>
+        <th scope="col">Title</th>
+        <th scope="col">Due Date</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for todo in todos %}
+      <tr>
+        <th scope="row">{{todo.id}}</th>
+        <td>{{todo.author}}</td>
+        <td>{{todo.title}}</td>
+        <td>{{todo.due_date}}</td>
+        <td>
+          <a class="btn btn-primary" href="#" role="button">Show more</a>
+          <a class="btn btn-warning" href="{% url 'todos:update' todo.id %}" role="button">Modify</a>
+          <a class="btn btn-danger" href="{% url 'todos:delete' todo.id %}" role="button">Delete</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+    
+  </table>
+
+{% endblock %}
