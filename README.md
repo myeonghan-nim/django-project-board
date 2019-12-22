@@ -1,6 +1,6 @@
-# reBoard with Django
+# README
 
-### Define app name and path name
+## Define app name and path name
 
 ```python
 app_name = 'todos'
@@ -10,11 +10,10 @@ urlpatterns = [
 ]
 ```
 
-### Make branch for check input correct
+## Make branch for check input is correct
 
 ```python
 def create(request):
-
     if request.method == 'POST':
         return 'correct!'
     else:
