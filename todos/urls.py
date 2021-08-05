@@ -1,7 +1,7 @@
 from django.urls import path
+
 from . import views
 
-# define app name for avoid duplicate
 app_name = 'todos'
 
 urlpatterns = [
