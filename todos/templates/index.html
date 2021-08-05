@@ -9,7 +9,7 @@
         <th scope="col">Author</th>
         <th scope="col">Title</th>
         <th scope="col">Due Date</th>
-        <th scope="col">Handle</th>
+        <th scope="col">Buttons</th>
       </tr>
     </thead>
     <tbody>
@@ -28,4 +28,9 @@
       {% endfor %}
     </tbody>
   </table>
+  <div class="d-flex justify-content-between">
+    <a href="{% url 'todos:index' %}" class="btn btn-primary m-5">Show All Todos</a>
+    <a href="{% url 'todos:new' %}" class="btn btn-primary m-5">New Todo</a>
+    <a href="{% url 'todos:add' %}" class="btn btn-primary m-5">Add Todo</a>
+  </div>
 {% endblock %}
