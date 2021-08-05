@@ -44,6 +44,11 @@
     </nav>
     <div class="container">
       {% block body %} {% endblock %}
+      <div class="d-flex justify-content-between">
+        <a href="{% url 'todos:index' %}" class="btn btn-primary m-5">Show All Todos</a>
+        <a href="{% url 'todos:new' %}" class="btn btn-primary m-5">New Todo</a>
+        <a href="{% url 'todos:add' %}" class="btn btn-primary m-5">Add Todo</a>
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

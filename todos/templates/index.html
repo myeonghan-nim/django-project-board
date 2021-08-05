@@ -20,7 +20,6 @@
         <td>{{todo.title}}</td>
         <td>{{todo.due_date}}</td>
         <td>
-          <a class="btn btn-primary" href="#" role="button">Show more</a>
           <a class="btn btn-warning" href="{% url 'todos:update' todo.id %}" role="button">Modify</a>
           <a class="btn btn-danger" href="{% url 'todos:delete' todo.id %}" role="button">Delete</a>
         </td>
@@ -28,9 +27,4 @@
       {% endfor %}
     </tbody>
   </table>
-  <div class="d-flex justify-content-between">
-    <a href="{% url 'todos:index' %}" class="btn btn-primary m-5">Show All Todos</a>
-    <a href="{% url 'todos:new' %}" class="btn btn-primary m-5">New Todo</a>
-    <a href="{% url 'todos:add' %}" class="btn btn-primary m-5">Add Todo</a>
-  </div>
 {% endblock %}
