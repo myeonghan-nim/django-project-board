@@ -1,4 +1,4 @@
-# Clone Project: Board
+# Clone Project: branch off TO-DO
 
 ## App name and path name
 
