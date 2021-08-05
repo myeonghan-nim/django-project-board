@@ -1,4 +1,4 @@
-# Clone Project: reTO-DO
+# Clone Project: Board
 
 ## App name and path name
 
