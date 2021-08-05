@@ -1,6 +1,6 @@
-# README
+# Clone Project: reTO-DO
 
-## Define app name and path name
+## App name and path name
 
 ```python
 app_name = 'todos'
@@ -10,12 +10,12 @@ urlpatterns = [
 ]
 ```
 
-## Make branch for check input is correct
+## Branch off
 
 ```python
 def create(request):
     if request.method == 'POST':
-        return 'correct!'
+        return 'POST'
     else:
-        return '?!?!?'
+        return 'GET'
 ```
