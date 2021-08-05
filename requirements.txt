@@ -1,0 +1,10 @@
+autopep8==1.5.7
+  pycodestyle==2.7.0
+  toml==0.10.2
+Django==3.2.6
+  asgiref==3.4.1
+  pytz==2021.1
+  sqlparse==0.4.1
+pipdeptree==2.1.0
+  pip==21.2.2
+setuptools==56.0.0
