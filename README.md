@@ -1,6 +1,6 @@
 # Project: board
 
-## App name and path name
+## call named URL
 
 ```python
 app_name = 'todos'
@@ -10,7 +10,7 @@ urlpatterns = [
 ]
 ```
 
-## Branch off
+## branch off GET and POST
 
 ```python
 def create(request):
