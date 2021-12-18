@@ -1,6 +1,6 @@
 # Project: board
 
-## call named URL
+## set name on URL
 
 ```python
 app_name = 'todos'
